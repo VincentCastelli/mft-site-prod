@@ -3,3 +3,50 @@
 * {
   box-sizing: border-box;
 }
+
+#app {
+  font-family: 'Questrial', sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.site-header {
+  background-color: #9466A4;
+  color: #EBDEF0;
+  padding: 15px 5%;
+  box-shadow: 0px 1px 3px #999;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 24px;
+  float: left;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 2px;
+  margin: 0;
+}
+
+.main-nav ul li {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #EBDEF0; 
+}
