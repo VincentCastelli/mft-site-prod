@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Home from './components/Home';
+import About from './components/About';
 
 class App extends Component {
   constructor(props) {
@@ -7,11 +9,12 @@ class App extends Component {
     this.state = {
       devFirstName: 'Vincent',
       devLastName: 'Castelli',
+      client: 'customer',
     };
   }
 
   render() {
-    const { devFirstName, devLastName } = this.state;
+    const { devFirstName, devLastName, client } = this.state;
     return (
       <div>
         <header className="site-header group">
@@ -34,7 +37,13 @@ class App extends Component {
           </nav>
         </header>
         <main>
-          <p>{`This site is under construction by ${devFirstName} ${devLastName}`}</p>
+          <Home
+            devFirstName={devFirstName}
+            devLastName={devLastName}
+          />
+          <About
+            client={client}
+          />
         </main>
         <footer>
           <p>

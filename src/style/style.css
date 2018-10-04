@@ -50,3 +50,13 @@
   text-decoration: none;
   color: #EBDEF0; 
 }
+
+.billboard {
+  background-color: #CCC;
+  text-align: center;
+  padding: 60px;
+}
+
+.billboard h2 {
+  margin-top: 0;
+}
