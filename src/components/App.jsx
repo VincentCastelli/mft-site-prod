@@ -28,7 +28,7 @@ const App = () => {
       <main>
         <Main />
       </main>
-      <footer>
+      <footer className="site-footer">
         <p>
           MFT 4 ME &copy; 2018
         </p>
