@@ -23,7 +23,7 @@ const Book = () => {
             </p>
             <p>
               <label>
-                <input type="text" name="email" placeholder=" " />
+                <input type="email" name="email" placeholder=" " />
                 <span>Email Address</span>
               </label>
             </p>
@@ -32,6 +32,9 @@ const Book = () => {
                 <input type="text" name="phone" placeholder=" " />
                 <span>Phone Number</span>
               </label>
+            </p>
+            <p>
+              <button type="submit">Submit</button>
             </p>
           </form>
         </div>
