@@ -12,19 +12,19 @@ const Book = () => {
             <p>
               <label>
                 <input type="text" name="firstname" placeholder=" " />
-                <span>First Name</span>
+                <span className="required">First Name</span>
               </label>
             </p>
             <p>
               <label>
                 <input type="text" name="lastname" placeholder=" " />
-                <span>Last Name</span>
+                <span className="required">Last Name</span>
               </label>
             </p>
             <p>
               <label>
                 <input type="email" name="email" placeholder=" " />
-                <span>Email Address</span>
+                <span className="required">Email Address</span>
               </label>
             </p>
             <p>
