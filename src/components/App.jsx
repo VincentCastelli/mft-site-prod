@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import Main from './Main';
 
@@ -11,16 +11,16 @@ const App = () => {
         <nav className="main-nav">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink activeClassName="current" exact to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/book">Book</Link>
+              <NavLink activeClassName="current" exact to="/book">Book</NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink activeClassName="current" exact to="/about">About</NavLink>
             </li>
             <li>
-              <Link to="/resources">Resources</Link>
+              <NavLink activeClassName="current" exact to="/resources">Resources</NavLink>
             </li>
           </ul>
         </nav>

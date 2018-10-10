@@ -32,6 +32,13 @@
   float: left;
 }
 
+.main-nav .current {
+  text-decoration: underline;
+  text-decoration-color: #ccf0c3;
+  color: #ccf0c3;
+  font-weight: bold;
+}
+
 .main-nav ul {
   display: flex;
   flex-direction: row;

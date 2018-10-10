@@ -9,9 +9,9 @@ import Resources from './Resources';
 const Main = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route path="/book" component={Book} />
-    <Route path="/about" component={About} />
-    <Route path="/resources" component={Resources} />
+    <Route exact path="/book" component={Book} />
+    <Route exact path="/about" component={About} />
+    <Route exact path="/resources" component={Resources} />
   </Switch>
 );
 
