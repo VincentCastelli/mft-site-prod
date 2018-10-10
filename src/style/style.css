@@ -17,29 +17,28 @@
 .site-header {
   background-color: #7c4789;
   color: #EBDEF0;
-  padding: 15px 5%;
+  padding: 20px 5%;
   border-bottom: #ccf0c3 3px solid;
 
 }
 
 .site-header h1 {
-  margin: 0;
+  margin: 0px;
+  padding-bottom: 20px; 
   font-size: 24px;
-  float: left;
 }
 
 .main-nav {
-  float: right;
+  float: left;
 }
 
 .main-nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
   list-style: none;
-  padding: 2px;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .main-nav ul li {
@@ -57,6 +56,18 @@
   text-decoration-color: #ccf0c3;
   color: #ccf0c3;
   font-weight: bold;
+}
+
+.credentials {
+  float: right;
+  font-size: 20px;
+  color: #EBDEF0; 
+}
+
+.credentials a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #EBDEF0; 
 }
 
 .billboard {
@@ -82,6 +93,7 @@
 .far, .fas {
   padding-top: 10px;
   font-size: 50px;
+  color: #7c4789;
 }
 
 .booking-form-container {
@@ -91,7 +103,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 3px 5px #777;
+  box-shadow: 0px 3px 5px #4a0e5c;
   text-align: center;
   background-color: #7c4789;
 }
@@ -115,7 +127,7 @@
   height: 50px;
   width: 250px;
   outline:none;
-  box-shadow: 0px 1px 3px #999;
+  box-shadow: 0px 1px 3px #4a0e5c;
   border: 1px solid #ccc;
 }
 
@@ -140,7 +152,7 @@
 input:focus + span, input:not(:placeholder-shown) + span {
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
-  color: #fff;
+  color: #EBDEF0;
   font-size: 18px;
 }
 
@@ -148,7 +160,7 @@ input:focus + span, input:not(:placeholder-shown) + span {
   text-transform: uppercase;
   border: 0px;
   background: #9466A4;
-  color: #fff;
+  color: #EBDEF0;
   padding: 10px 15px;
 }
 

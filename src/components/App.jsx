@@ -24,6 +24,11 @@ const App = () => {
             </li>
           </ul>
         </nav>
+        <div className="credentials">
+          <a href="none">Sign up</a>
+          /
+          <a href="none">Login</a>
+        </div>
       </header>
       <main>
         <Main />
