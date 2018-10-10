@@ -23,13 +23,14 @@
 }
 
 .site-header h1 {
+  display: inline-block;
   margin: 0px;
-  padding-bottom: 20px; 
+  padding-bottom: 30px; 
   font-size: 24px;
 }
 
 .main-nav {
-  float: left;
+  display: block;
 }
 
 .main-nav .current {
@@ -182,4 +183,24 @@ input:focus + span, input:not(:placeholder-shown) + span {
   padding: 10px 5%;
   background-color: #7c4789;
   color: #EBDEF0;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+  .site-header,
+  .main-nav,
+  .main-nav li, 
+  .core-assist-container .box {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .core-assist-container {
+    display: block;
+    text-align: center;
+  }
+
+
 }

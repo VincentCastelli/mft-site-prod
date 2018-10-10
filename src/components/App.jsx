@@ -8,6 +8,11 @@ const App = () => {
     <div>
       <header className="site-header group">
         <h1>MFT 4 ME</h1>
+        <div className="credentials">
+          <a href="none">Sign up</a>
+          /
+          <a href="none">Login</a>
+        </div>
         <nav className="main-nav">
           <ul>
             <li>
@@ -24,11 +29,6 @@ const App = () => {
             </li>
           </ul>
         </nav>
-        <div className="credentials">
-          <a href="none">Sign up</a>
-          /
-          <a href="none">Login</a>
-        </div>
       </header>
       <main>
         <Main />
