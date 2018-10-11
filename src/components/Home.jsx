@@ -4,6 +4,9 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
+      <section className="showcase">
+        <h1>Therapy at your finger tips</h1>
+      </section>
       <section className="billboard">
         <h2>The Next Big Thing</h2>
         <p>This site is under construction by Vincent Castelli</p>
