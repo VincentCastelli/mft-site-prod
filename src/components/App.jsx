@@ -8,18 +8,10 @@ const App = () => {
     <div>
       <header className="site-header group">
         <h1>MFT 4 ME</h1>
-        <div className="credentials">
-          <a href="none">Sign up</a>
-          /
-          <a href="none">Login</a>
-        </div>
         <nav className="main-nav">
           <ul>
             <li>
               <NavLink activeClassName="current" exact to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="current" exact to="/book">Book</NavLink>
             </li>
             <li>
               <NavLink activeClassName="current" exact to="/about">About</NavLink>
@@ -29,8 +21,11 @@ const App = () => {
             </li>
           </ul>
         </nav>
+        <NavLink activeClassName="credentials" exact to="/book">
+          <button type="button">Book an appointment</button>
+        </NavLink>
       </header>
-      <main>
+      <main className="main-content">
         <Main />
       </main>
       <footer className="site-footer">

@@ -15,7 +15,7 @@ const Home = () => {
         <div className="box">
           <i className="far fa-heart" />
           <h3>MFT Counciling</h3>
-          <p>In office visits to scheduled regularly to track progress and better mental health</p>
+          <p>In office visits scheduled regularly to track progress and better mental health</p>
         </div>
         <div className="box">
           <i className="fas fa-users" />
