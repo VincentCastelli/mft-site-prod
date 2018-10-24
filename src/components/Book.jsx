@@ -30,10 +30,16 @@ const Book = () => {
             <p>
               <label>
                 <input type="text" name="phone" placeholder=" " />
-                <span>Phone Number</span>
+                <span className="required">Phone Number</span>
               </label>
             </p>
-            <p>
+            <p className="full-width">
+              <label htmlFor="textarea" className="message-label">
+                Leave us a message
+                <textarea id="textarea" type="text" name="message" />
+              </label>
+            </p>
+            <p className="full-width">
               <button type="submit">Submit</button>
             </p>
           </form>

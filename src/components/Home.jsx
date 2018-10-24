@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 
 const Home = () => {
@@ -6,6 +7,9 @@ const Home = () => {
     <div>
       <section className="showcase">
         <h1>Therapy at your finger tips</h1>
+        <NavLink activeClassName="credentials" exact to="/book">
+          <button type="button">Book an appointment</button>
+        </NavLink>
       </section>
       <section className="billboard">
         <h2>The Next Big Thing</h2>
