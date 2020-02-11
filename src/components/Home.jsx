@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 // import PropTypes from 'prop-types';
 
 const Home = () => {
@@ -7,18 +7,12 @@ const Home = () => {
     <div>
       <section className="showcase">
         <h1>Therapy at your finger tips</h1>
-        <NavLink activeClassName="credentials" exact to="/book">
-          <button type="button">Book an appointment</button>
-        </NavLink>
-      </section>
-      <section className="billboard">
-        <h2>The Next Big Thing</h2>
-        <p>This site is under construction by Vincent Castelli</p>
+        <Button variant="contained" color="primary" href="/book">Request an appointment</Button>
       </section>
       <section className="core-assist-container">
         <div className="box">
           <i className="far fa-heart" />
-          <h3>MFT Counciling</h3>
+          <h3>MFT Counseling</h3>
           <p>In office visits scheduled regularly to track progress and better mental health</p>
         </div>
         <div className="box">

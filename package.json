@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "mft-for-me-production-site",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/VincentCastelli/project-template#readme",
   "dependencies": {
+    "@material-ui/core": "^4.9.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "i": "^0.3.6",

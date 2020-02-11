@@ -1,11 +1,11 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-const About = () => {
+const Services = () => {
   return (
     <div>
-      <h2>About Me</h2>
-      <p>I am a seasoned MFT!</p>
+      <h2>Services</h2>
+      <p>These are the services that we provide.</p>
     </div>
   );
 };
@@ -14,4 +14,4 @@ const About = () => {
 //   client: PropTypes.string.isRequired,
 // };
 
-export default About;
+export default Services;

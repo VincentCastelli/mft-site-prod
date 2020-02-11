@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize.css"; 
+@import "../../node_modules/normalize.css/normalize.css";
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ section {
 }
 
 #app {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .group:after {
@@ -33,7 +33,7 @@ section {
 }
 
 .site-header h1 {
-  margin: 0px; 
+  margin: 0px;
   padding-right: 450px;
   font-size: 45px;
 }
@@ -53,42 +53,51 @@ section {
 }
 
 .main-nav ul li {
+  display: inline-block;
   padding-right: 35px;
-  font-size: 25px;
+  font-size: 0px;
 }
 
 .main-nav ul li a {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 400;
   text-decoration: none;
-  color: #EBDEF0; 
+  transition: transform 0.3s, text-shadow 0.2s;
+  color: #ebdef0;
 }
 
 .main-nav ul li a:hover {
   color: #ed3662;
-  font-weight: bold;
+  text-shadow: 0 0 0.5px #ed3662, 0 0 0.5px #ed3662;
+  transform: translate3d(0, -8px, 0);
 }
 
-.credentials a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #ebdef0; 
+.main-nav ul li a::after {
+  display: block;
+  content: attr(title);
+  font-weight: 600;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .showcase {
-  min-height: 400px;
+  min-height: 450px;
   text-align: center;
   position: relative;
 }
 
 .showcase::after {
   content: "";
-  background: url('../images/home_background.jpg') no-repeat -200px;
+  background: url("../images/home_background.jpg") no-repeat -200px;
   opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .showcase h1 {
@@ -99,28 +108,19 @@ section {
   padding-bottom: 50px;
 }
 
-.billboard {
-  color: #7c4789;
-  background-color: #ebdef0;
-  text-align: center;
-  padding: 60px;
-}
-
-.billboard h2 {
-  margin-top: 0;
-}
-
 .core-assist-container {
   display: flex;
   text-align: center;
+  margin-top: 0;
 }
 
-.core-assist-container  .box {
+.core-assist-container .box {
   padding: 2.5% 5%;
   width: 70%;
 }
 
-.far, .fas {
+.far,
+.fas {
   padding-top: 10px;
   font-size: 50px;
   color: #ed3662;
@@ -130,7 +130,9 @@ section {
   margin-left: 30%;
   margin-right: 30%;
   width: 40%;
+  height: 360px;
   box-shadow: 0px 3px 5px #555555;
+  border-radius: 5px;
   text-align: center;
   background-color: #7c4789;
 }
@@ -139,14 +141,18 @@ section {
   padding: 15px;
 }
 
-.booking-form p, label, input, textarea {
+.booking-form p,
+label,
+input,
+textarea {
   height: 50px;
   width: 100%;
-  outline:none;
+  outline: none;
 }
 
 .booking-form input {
   border: 1px solid #ddd;
+  border-radius: 2px;
 }
 
 .booking-form input:focus {
@@ -157,7 +163,6 @@ section {
 .booking-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 20px;
 }
 
 .booking-form .full-width {
@@ -173,7 +178,7 @@ section {
 .booking-form .message-label {
   color: #ebdef0;
 }
-  
+
 .booking-form span {
   padding: 10px;
   pointer-events: none;
@@ -186,40 +191,40 @@ section {
   opacity: 0.5;
 }
 
-input:focus + span, input:not(:placeholder-shown) + span {
+input:focus + span,
+input:not(:placeholder-shown) + span {
   opacity: 1;
   transform: scale(0.75) translateY(-100%) translateX(-30px);
   color: #ebdef0;
   font-size: 18px;
 }
 
-button {
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: 1px solid #55447e;
-  text-shadow: 0 3px 1px #0b0713;
-  background: #29163c;
-  color: #ebdef0;
-  padding: 10px 20px;
-}
-button:hover {
-  border-color: #ed3662;
-  color: #ed3662;
-}
-
-button:active {
-  background: #513c75;
-  outline: none;
-}
-
-button:focus {
-  background: #513c75;
-  outline: none;
-}
-
-.required:after { 
-  content:" *"; 
+.required:after {
+  content: " *";
   color: red;
+}
+
+.submit-button {
+  background-color: #0084b4;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+textarea {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+.main-content {
+  position: relative;
+  padding-top: 80px;
+  min-height: calc(100vh - 60px);
 }
 
 .site-footer {
@@ -230,17 +235,12 @@ button:focus {
   color: #ebdef0;
 }
 
-.main-content {
-  position: relative;
-  padding-top: 60px;
-}
-
 /* Media Queries */
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .site-header,
   .main-nav,
-  .main-nav li, 
+  .main-nav li,
   .core-assist-container .box {
     float: none;
     text-align: center;
@@ -252,6 +252,4 @@ button:focus {
     display: block;
     text-align: center;
   }
-
-
 }
