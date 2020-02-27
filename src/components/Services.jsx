@@ -3,7 +3,7 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div>
+    <div className="flex-content-container">
       <h2>Services</h2>
       <p>These are the services that we provide.</p>
     </div>

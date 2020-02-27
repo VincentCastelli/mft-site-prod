@@ -114,6 +114,48 @@ section {
   margin-top: 0;
 }
 
+.flex-content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 400px;
+}
+
+.about-title-override {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.about-title-bar {
+  margin-top: 10px;
+  background: black;
+  height: 2px;
+  width: 110px;
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.bio-image {
+  transform: translate(0px, 60px);
+  width: 300px;
+  height: 300px;
+  background: url(../images/AmandaMFT.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: black 2px solid;
+}
+
+.bio {
+  max-width: 300px;
+}
+
 .core-assist-container .box {
   padding: 2.5% 5%;
   width: 70%;

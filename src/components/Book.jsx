@@ -3,7 +3,7 @@ import React from 'react';
 
 const Book = () => {
   return (
-    <div>
+    <div className="flex-content-container">
       <h2>Request An Appointment</h2>
       <p>Fill out the information below to get started:</p>
       <div className="booking-form-container">
